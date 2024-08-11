@@ -178,7 +178,7 @@ p{
 
 /* -------------------------- Footer styles -------------------------------*/
 footer {
-    background-color: black;
+    /* background-color: black; */
     color: #858994;
     text-align: center;
     padding: 1rem;
@@ -202,20 +202,21 @@ footer p {
     padding: 10px;
     padding-right: 0;
     margin-right: -10px;
-    width: 970px;
+    width: 950px;
+    display: grid;
+    grid-template-columns: repeat(6, auto) ;
+
 }
 .video-gallery{
         margin-top: 0px;
         
 }
 .footer-slider{
-    margin-top:0px;
+    padding-bottom: 50px;
+    
 }
-.footer-slider-wrapper{
-    position: absolute;
-    bottom: 100px !important;
-    left: 0px;
-}
+
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     nav {
@@ -264,15 +265,28 @@ footer p {
 }
 
 .slider-wrapper {
-    overflow: visible;
+    /* overflow: visible; */
     height: 110px;
     padding: 8px;
     border-radius: 10px; 
-    overflow: hidden; 
+    /* overflow: hidden;  */
+    overflow: scroll;
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 12px;
+    height: 300px;
 }
+::-webkit-scrollbar{
+    background-color: transparent;
+    
+}
+::-webkit-scrollbar-thumb {
+    background: #33153e;
+    border-radius: 20px;
+    width: 1px !important;
+  }
 
 .slider {
-    display: flex;
     position: relative;
     transition: transform 0.3s ease-in-out;
 }
@@ -284,6 +298,8 @@ footer p {
     object-fit: cover;
     border-radius: 4px;
     margin-right: 1rem;
+    margin: 10px;
+    z-index: 9999999;
 }
 
 .slider-button {
@@ -299,15 +315,13 @@ footer p {
 }
 
 
-main{
+body{
     background-image: url(https://s3.amazonaws.com/trumptv/testvideo/home_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
-.slider-wrapper{
-    margin: 0 auto;
-}
+
 .her__con{
     max-width: 590px;
 }
@@ -389,16 +403,14 @@ color: #FFFFFF;
 }
 
 .slider-wrapper {
-    position: absolute;
-    display: flex;
-    align-items: center;
+    /* position: absolute;
     margin: 0 auto;
     border-radius: 12px;
-    height: 200px;
+    height: 297px; */
     
 }
 .slider {
-    display: flex;
+    /* display: flex; */
     transition: transform 0.5s ease-in-out;
     position: relative; 
 }
