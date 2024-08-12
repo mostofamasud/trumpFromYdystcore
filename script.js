@@ -15,11 +15,11 @@
             videoPlayer.classList.add("shrink");
             
           } else if (!isMouseOverGallery) {
-            // videoGallery.classList.remove("visible");
-            // videoPlayer.classList.remove("shrink");
+            videoGallery.classList.remove("visible");
+            videoPlayer.classList.remove("shrink");
             
-            videoGallery.classList.add("visible");
-            videoPlayer.classList.add("shrink");
+            // videoGallery.classList.add("visible");
+            // videoPlayer.classList.add("shrink");
 
           }
         });
@@ -33,11 +33,11 @@
 
         videoGallery.addEventListener("mouseleave", function () {
           isMouseOverGallery = false;
-          // videoGallery.classList.remove("visible");
-          // videoPlayer.classList.remove("shrink");
+          videoGallery.classList.remove("visible");
+          videoPlayer.classList.remove("shrink");
           
-          videoGallery.classList.add("visible");
-          videoPlayer.classList.add("shrink");
+          // videoGallery.classList.add("visible");
+          // videoPlayer.classList.add("shrink");
           
         });
 
@@ -181,3 +181,46 @@
           mainVideo.style.zIndex = "3333333";  
         });
       });
+      // const balanceTotal = document.getElementById('balance-total');
+      // const depositTotal = document.getElementById('deposit-total');
+      // const depositInput = document.getElementById('deposit-input');
+      // const depositButton = document.getElementById('deposit-button');
+      // const withdrawTotal = document.getElementById('withdraw-total');
+      // const withdrawInput = document.getElementById('withdraw-input');
+      // const withdrawButton = document.getElementById('withdraw-button');
+      
+              // Deposit 
+      // depositButton.addEventListener('click', function(){
+      //     // get new amount
+      //     const depositInputValue = depositInput.value;
+      //     const depositInputValueNumber = parseFloat(depositInputValue);      
+      //     // get previous amount
+      //     const depositTotalMoney = depositTotal.innerText;
+      //     const depositTotalAmount = parseFloat(depositTotalMoney);      
+      //     // total deposit money
+      //     const totalDepositMoney = depositInputValueNumber + depositTotalAmount;          
+      //     // Set deposit in the deposit total place
+      //     depositTotal.innerText = totalDepositMoney;      
+      //     //get total balance
+      //     const totalBalance = balanceTotal.innerText;
+      //     const totalBalanceMoney = depositInputValueNumber + parseFloat(totalBalance);
+      //     balanceTotal.innerText = totalBalanceMoney;     
+      //     //Clear input Field
+      //     depositInput.value = '';
+      
+      // });
+const sliderFullOpen = document.getElementById("slider-full-open");
+const slider = document.getElementById("slider")
+const sliderWrapper = document.getElementById("sliderWrapper")
+
+      const viewMoreBtn = document.getElementById("viewMore")
+      viewMoreBtn.addEventListener('click', function(){
+        slider.classList.add("sliderJS");
+        slider.classList.add("slider-wrapperJS");
+        slider.style.height = "300px"
+        sliderWrapper.style.overflow = "scroll"
+        sliderWrapper.style.height = "300px"
+        console.log(videoGallery);
+      })
+
+

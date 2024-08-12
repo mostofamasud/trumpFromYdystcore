@@ -141,7 +141,7 @@ p{
 .video-player {
     position: relative;
     width: 100%;
-    max-width: 880px;
+    max-width: 1520px;
 }
 .video-player video {
     max-width: 100%;
@@ -203,6 +203,15 @@ footer p {
     padding-right: 0;
     margin-right: -10px;
     width: 950px;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+    /* display: grid;
+    grid-template-columns: repeat(6, auto) ; */
+
+}
+.sliderJS{
+
     display: grid;
     grid-template-columns: repeat(6, auto) ;
 
@@ -212,7 +221,8 @@ footer p {
         
 }
 .footer-slider{
-    padding-bottom: 50px;
+    padding-bottom: 240px;
+    margin: 0;
     
 }
 
@@ -266,15 +276,18 @@ footer p {
 
 .slider-wrapper {
     /* overflow: visible; */
-    height: 110px;
+    /* height: 110px; */
     padding: 8px;
     border-radius: 10px; 
     /* overflow: hidden;  */
-    overflow: scroll;
+    /* overflow: scroll; */
     position: absolute;
     margin: 0 auto;
     border-radius: 12px;
-    height: 300px;
+    height: 100px;
+}
+.slider-wrapperJS {
+    /* overflow: scroll; */
 }
 ::-webkit-scrollbar{
     background-color: transparent;
@@ -576,4 +589,31 @@ body, html {
     .nav_btn{
         font-size: 14px;
     }
+}
+.displayBlockKoro{
+display: block;
+}
+.displayNoneKoro{
+    display: none;
+}
+#viewMore {
+    z-index: 99999999999;
+    position: absolute;
+    top: -39px;
+    left: 450px;
+}
+.text-center-btn{
+    position: absolute;
+    top: -20px;
+    left: 400px;
+    z-index: 99999999999999999999999999999999;
+}
+.btn-success{
+    background: transparent;
+    
+    border: 2px solid #271d42;
+}
+.btn-success:hover{
+    background: #271d42;   
+    border: 2px solid #271d42;
 }
